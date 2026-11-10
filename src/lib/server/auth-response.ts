@@ -1,6 +1,7 @@
 import { z } from "zod";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { safeReturnPath } from "@/lib/auth";
+import { isSameOrigin, requestOrigin } from "./request-origin";
 
 const emailSchema = z.email().max(254);
 const reply = (body: object, status = 200) =>
@@ -11,8 +12,8 @@ export async function authResponse(
   action: string,
   createClient: () => Promise<SupabaseClient>,
 ) {
-  const origin = process.env.NEXT_PUBLIC_APP_URL || new URL(request.url).origin;
-  if (request.headers.get("origin") !== origin)
+  const origin = requestOrigin(request);
+  if (!isSameOrigin(request))
     return reply(
       { error: "Open this form in SiteAudit AI and try again." },
       403,

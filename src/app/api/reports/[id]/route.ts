@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { currentAccount, workspaceAccess } from "@/lib/server/auth";
 import { createClient } from "@/lib/supabase/server";
+import { isSameOrigin } from "@/lib/server/request-origin";
 
 export async function DELETE(
   request: Request,
@@ -8,8 +9,7 @@ export async function DELETE(
 ) {
   const denied = await workspaceAccess(request);
   if (denied) return denied;
-  const origin = process.env.NEXT_PUBLIC_APP_URL || new URL(request.url).origin;
-  if (request.headers.get("origin") !== origin)
+  if (!isSameOrigin(request))
     return Response.json(
       { error: "Open this action in your workspace." },
       { status: 403 },

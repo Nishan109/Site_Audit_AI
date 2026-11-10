@@ -6,7 +6,7 @@ SiteAudit AI uses Supabase Auth for email accounts and `public.audit_reports` fo
 
 Keep the existing variables in `.env.local`. Add `SUPABASE_SECRET_KEY` using a server secret from the project's Settings > API Keys. The secret is used only by the server report writer. Session-scoped clients read and delete reports through owner-only Row Level Security. Keep the secret in deployment environment settings when hosting the app.
 
-Set `NEXT_PUBLIC_APP_URL` to the exact origin you run, including the port. For the current local server this is `http://127.0.0.1:3001`. In production use the deployed HTTPS origin. Restart the app after changing these settings. Set `SUPABASE_PASSWORD_MIN_LENGTH` to the minimum configured under Authentication > Security and Protection. The default is six, and Supabase enforces all additional password requirements.
+Set `NEXT_PUBLIC_APP_URL` to the canonical origin you run, including the port, for setup and verification scripts. For the current local server this is `http://127.0.0.1:3001`. In production use the deployed HTTPS origin. Authentication POSTs compare the browser's `Origin` with the actual request URL, so a stale local setting or a different preview hostname cannot reject a legitimate same-origin login. Signup/recovery callbacks and confirmation redirects also use the current request origin. Foreign, absent and opaque origins remain rejected; caller-supplied forwarded headers do not establish trust. Restart/redeploy after changing environment settings. Set `SUPABASE_PASSWORD_MIN_LENGTH` to the minimum configured under Authentication > Security and Protection. The default is six, and Supabase enforces all additional password requirements.
 
 ## Email confirmation and password recovery
 
@@ -18,6 +18,18 @@ http://127.0.0.1:3001/auth/confirm?flow=recovery
 ```
 
 If you also run localhost or port 3000, add their exact URLs separately. Match `NEXT_PUBLIC_APP_URL` to the origin users open.
+
+For the current production deployment, configure these values:
+
+```text
+Vercel environment: NEXT_PUBLIC_APP_URL=https://site-audit-ai-lemon.vercel.app
+Supabase Site URL: https://site-audit-ai-lemon.vercel.app
+Supabase Redirect URLs:
+https://site-audit-ai-lemon.vercel.app/auth/confirm
+https://site-audit-ai-lemon.vercel.app/auth/confirm?flow=recovery
+```
+
+Apply Vercel environment changes to Production and redeploy. Keep localhost settings in the local `.env.local` file. For preview signups/recovery, add only the preview callback URLs you intend to support to Supabase's redirect allowlist. See [Supabase redirect configuration](https://supabase.com/docs/guides/auth/redirect-urls). Existing-account password login does not require an email redirect, but signup confirmation and password recovery do.
 
 For confirmation links that also work on another device, set Authentication > Email Templates > Confirm signup to link to the application callback using the token hash.
 
