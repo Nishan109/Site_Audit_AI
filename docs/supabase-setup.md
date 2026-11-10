@@ -55,6 +55,8 @@ The migration `supabase/migrations/20261110131115_private_audit_reports.sql` cre
 
 The audit endpoint validates the session before collection. The existing analysis runs, then saving has a separate six-second deadline. Failure to save still returns the report for export. Reopening a saved report reads its snapshot without calling AI. Later optional checks, research refreshes, manual progress, copy edits, and creative drafts stay in the current session. Export the updated view to keep those changes.
 
+Deleting a report uses the verified account's session and owner-only RLS. The endpoint returns success only when the database returns the deleted row's ID. A missing or inaccessible report returns the same 404 response; it never reports a false deletion. The history updates its count only after confirmed success and provides a login or refresh action on failure. Local origin checks account for Next.js normalizing loopback URLs internally, but require the same port and do not trust arbitrary forwarded hosts.
+
 The pending website address stays in the same tab's session storage for thirty minutes. It is excluded from authentication redirect URLs and emails. Source URLs containing credential-like parameters make the report ineligible for durable storage, while its current-session report remains exportable.
 
 ## Verification

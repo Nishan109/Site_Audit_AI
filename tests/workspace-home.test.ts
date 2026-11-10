@@ -85,6 +85,36 @@ test("history deletion changes the real total only after success and retains acc
   assert.equal(document.activeElement?.id, "history-title");
 });
 
+test("failed deletions retain the report and count, expose a login action and allow a confirmed retry", async (t) => {
+  let calls = 0;
+  t.mock.method(globalThis, "fetch", async () => ++calls === 1
+    ? Response.json({ error: "Please log in again before deleting this report.", code: "AUTH_REQUIRED" }, { status: 401 })
+    : Response.json({ deleted: true }));
+  const view = render(createElement(AuditHistory, { reports, count: 8, query: "", failed: false }));
+  fireEvent.click(view.getByRole("button", { name: "Delete report for example.com" }));
+  fireEvent.click(view.getByRole("button", { name: "Delete report" }));
+  await waitFor(() => assert.match(view.getByRole("alert").textContent || "", /log in again/));
+  assert.ok(view.getByLabelText("8 saved reviews"));
+  assert.ok(view.getByRole("link", { name: "example.com" }));
+  assert.equal(view.getByRole("link", { name: "Log in again" }).getAttribute("href"), "/login");
+  fireEvent.click(view.getByRole("button", { name: "Delete report" }));
+  await waitFor(() => assert.ok(view.getByLabelText("7 saved reviews")));
+  assert.equal(calls, 2);
+  assert.equal(view.queryByRole("link", { name: "example.com" }), null);
+});
+
+test("an unconfirmed success response cannot silently remove a report", async (t) => {
+  t.mock.method(globalThis, "fetch", async () => new Response("<html>Sign in</html>", { status: 200 }));
+  const view = render(createElement(AuditHistory, { reports, count: 8, query: "", failed: false }));
+  fireEvent.click(view.getByRole("button", { name: "Delete report for example.com" }));
+  fireEvent.click(view.getByRole("button", { name: "Delete report" }));
+  await waitFor(() => assert.match(view.getByRole("alert").textContent || "", /couldn’t be confirmed/));
+  assert.ok(view.getByLabelText("8 saved reviews"));
+  assert.ok(view.getByRole("link", { name: "example.com" }));
+  assert.equal(view.getByRole("link", { name: "Refresh audit history" }).getAttribute("href"), "/workspace");
+  assert.equal(view.getByRole("dialog").hasAttribute("open"), true);
+});
+
 test("filtered, failed, and older-page empty states remain distinct from a first review", () => {
   const filtered = render(
     createElement(AuditHistory, {

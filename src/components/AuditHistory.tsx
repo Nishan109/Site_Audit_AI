@@ -24,10 +24,12 @@ export default function AuditHistory({
   const [removed, setRemoved] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [errorCode, setErrorCode] = useState("");
   const [selected, setSelected] = useState<ReportSummary | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement | null>(null);
   const heading = useRef<HTMLHeadingElement>(null);
+  const deleting = useRef(false);
   const visible = reports.filter((report) => !removed.includes(report.id));
   const retainedCount =
     count === null
@@ -43,22 +45,43 @@ export default function AuditHistory({
     trigger.current?.focus();
   }
   async function remove() {
-    if (!selected || busy) return;
+    if (!selected || deleting.current) return;
+    deleting.current = true;
     setBusy(true);
     setError("");
+    setErrorCode("");
     try {
       const response = await fetch(`/api/reports/${selected.id}`, {
         method: "DELETE",
         signal: AbortSignal.timeout(15000),
       });
-      if (!response.ok) throw new Error();
+      const data = await response.json().catch(() => null);
+      if (!response.ok) {
+        setErrorCode(
+          response.status === 401
+            ? "AUTH_REQUIRED"
+            : typeof data?.code === "string" ? data.code : "",
+        );
+        setError(
+          response.status === 401
+            ? "Please log in again before deleting this report."
+            : typeof data?.error === "string"
+              ? data.error
+              : "We couldn’t delete this report. Please try again in a moment.",
+        );
+        return;
+      }
+      if (data?.deleted !== true)
+        throw new Error("Deletion was not confirmed");
       setRemoved((items) => [...items, selected.id]);
       dialog.current?.close();
       heading.current?.focus();
       setSelected(null);
     } catch {
-      setError("We couldn’t delete this report. Please retry.");
+      setError("The deletion couldn’t be confirmed. Refresh your history before trying again.");
+      setErrorCode("DELETE_UNAVAILABLE");
     } finally {
+      deleting.current = false;
       setBusy(false);
     }
   }
@@ -218,6 +241,7 @@ export default function AuditHistory({
                             trigger.current = event.currentTarget;
                             setSelected(report);
                             setError("");
+                            setErrorCode("");
                             dialog.current?.showModal();
                           }}
                         >
@@ -329,6 +353,13 @@ export default function AuditHistory({
         {error && (
           <p role="alert" className={styles.error}>
             {error}
+          </p>
+        )}
+        {error && (
+          <p>
+            <a className="button button-secondary" href={errorCode === "AUTH_REQUIRED" ? "/login" : "/workspace"}>
+              {errorCode === "AUTH_REQUIRED" ? "Log in again" : "Refresh audit history"}
+            </a>
           </p>
         )}
         <div className={styles.rowActions}>

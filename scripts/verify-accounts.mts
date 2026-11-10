@@ -149,7 +149,7 @@ try {
       signal: AbortSignal.timeout(15000),
     },
   );
-  assert.equal(rejectedDelete.status, 200);
+  assert.equal(rejectedDelete.status, 404);
   const retained = await clients[0]
     .from("audit_reports")
     .select("id")
@@ -161,10 +161,23 @@ try {
     signal: AbortSignal.timeout(15000),
   });
   assert.equal(deleted.status, 200);
+  assert.deepEqual(await deleted.json(), { deleted: true });
   assert.equal(
     (await clients[0].from("audit_reports").select("id")).data?.length,
     0,
   );
+  const repeatedDelete = await fetch(origin + "/api/reports/" + report.analysisId, {
+    method: "DELETE",
+    headers: { Cookie: cookie, Origin: origin },
+    signal: AbortSignal.timeout(15000),
+  });
+  assert.equal(repeatedDelete.status, 404);
+  const refreshedHistory = await fetch(origin + "/workspace", {
+    headers: { Cookie: cookie },
+    signal: AbortSignal.timeout(45000),
+  });
+  assert.equal(refreshedHistory.status, 200);
+  assert.ok(!(await refreshedHistory.text()).includes(report.analysisId));
   const signedOut = await fetch(origin + "/api/auth/logout", {
     method: "POST",
     headers: {

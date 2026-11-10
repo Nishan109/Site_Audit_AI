@@ -3,8 +3,25 @@ import assert from "node:assert/strict";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { authResponse } from "../src/lib/server/auth-response";
 import { GET as confirm } from "../src/app/auth/confirm/route";
+import { isSameOrigin, requestOrigin } from "../src/lib/server/request-origin";
 
 const deployment = "https://site-audit-ai-lemon.vercel.app";
+
+test("local Next.js URL normalization respects the actual loopback authority and exact port", () => {
+  const local = (host: string, origin: string) => new Request("http://localhost:3001/api/auth/login", {
+    headers: { host, origin, "x-forwarded-host": "attacker.example" },
+  });
+  const ip = local("127.0.0.1:3001", "http://127.0.0.1:3001");
+  assert.equal(requestOrigin(ip), "http://127.0.0.1:3001");
+  assert.equal(isSameOrigin(ip), true);
+  assert.equal(isSameOrigin(local("[::1]:3001", "http://[::1]:3001")), true);
+  assert.equal(isSameOrigin(local("127.0.0.1:3002", "http://127.0.0.1:3002")), false);
+  assert.equal(isSameOrigin(local("attacker.example", "http://attacker.example")), false);
+  assert.equal(isSameOrigin(local("127.0.0.1:3001/path", "http://127.0.0.1:3001")), false);
+  assert.equal(isSameOrigin(new Request(`${deployment}/api/auth/login`, {
+    headers: { host: "127.0.0.1:3001", origin: "http://127.0.0.1:3001" },
+  })), false);
+});
 
 test("same-origin login works on production, previews and local hosts with a stale app URL", async (t) => {
   const previous = process.env.NEXT_PUBLIC_APP_URL;
