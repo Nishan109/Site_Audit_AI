@@ -1,0 +1,81 @@
+.page {
+  width: min(100% - 40px, 640px);
+  margin: 64px auto;
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+}
+.home,
+.guide {
+  color: #5337ae;
+  font-weight: 550;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.page h1 {
+  font-size: 30px;
+  font-weight: 650;
+}
+.page p,
+.dialog > p {
+  color: #47556b;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.badge,
+.guide {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+.badge {
+  padding: 4px 8px;
+  margin-bottom: 10px;
+  background: #efeaff;
+  border-radius: 6px;
+  color: #5337ae;
+}
+.form {
+  display: grid;
+  gap: 8px;
+  margin-block: 20px 16px;
+}
+.form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #b9c2d4;
+  border-radius: 8px;
+  background: #fff;
+  color: #182236;
+}
+.form input:focus-visible {
+  outline: 3px solid #7052e8;
+  outline-offset: 2px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+.error,
+.saved {
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+.error {
+  background: #fff1f2;
+  color: #922935;
+}
+.saved {
+  background: #eaf7f1;
+  color: #25624b;
+}

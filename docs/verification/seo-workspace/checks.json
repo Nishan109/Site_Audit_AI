@@ -1,0 +1,103 @@
+{
+  "baseURL": "http://127.0.0.1:3001",
+  "fixtureOnly": true,
+  "checks": [
+    {
+      "label": "Findings 320px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 320px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings 390px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 390px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings 768px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 768px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings 900px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 900px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings 1024px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 1024px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings 1280px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 1280px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings 1440px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Page signals 1440px",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "partial",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "empty",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "large-text",
+      "overflow": false,
+      "minimumTextContrast": 4.78
+    }
+  ],
+  "errors": [],
+  "unexpected": [],
+  "verified": [
+    "Page cross-links",
+    "Keyboard focus",
+    "Navigation retention",
+    "New-report reset",
+    "Generation failure and retry",
+    "Actual text download",
+    "Clipboard denial",
+    "Complete print content"
+  ]
+}

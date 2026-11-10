@@ -1,0 +1,55 @@
+{
+  "mode": "Controlled audit work through the real streaming response helper and browser UI",
+  "checks": [
+    {
+      "width": 320,
+      "zoom": 100,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    },
+    {
+      "width": 390,
+      "zoom": 100,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    },
+    {
+      "width": 768,
+      "zoom": 100,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    },
+    {
+      "width": 1024,
+      "zoom": 100,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    },
+    {
+      "width": 1280,
+      "zoom": 100,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    },
+    {
+      "width": 1440,
+      "zoom": 100,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    },
+    {
+      "width": 640,
+      "zoom": 200,
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.9
+    }
+  ],
+  "flows": [
+    "Parallel activity before report",
+    "Optional research limitation",
+    "Exact submitted URL",
+    "Stale progress after simulated hidden-tab delay",
+    "Keyboard cancellation and downstream abort",
+    "Report focus and handoff"
+  ]
+}

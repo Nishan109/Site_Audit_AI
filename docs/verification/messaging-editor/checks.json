@@ -1,0 +1,73 @@
+{
+  "fixtureOnly": true,
+  "screenshots": 18,
+  "checks": [
+    {
+      "width": 320,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 390,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 768,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 900,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 1024,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 1280,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 1440,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    },
+    {
+      "width": 720,
+      "deviceScale": 2,
+      "zoomEquivalent": "200% reflow on a 1440px canvas",
+      "overflow": false,
+      "minimumTextContrast": 5.17,
+      "editorBeforeSteps": true
+    }
+  ],
+  "browserErrors": [],
+  "unexpectedRequests": [],
+  "selection": "passed",
+  "keyboard": "passed",
+  "navigationRetention": "passed",
+  "newReportReset": "passed",
+  "fullDraftAwareExport": "passed",
+  "browserTextDownload": "passed",
+  "clipboardFailure": "passed",
+  "generationRetry": "passed"
+}

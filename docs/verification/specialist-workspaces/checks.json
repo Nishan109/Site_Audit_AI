@@ -1,0 +1,239 @@
+{
+  "findings": [
+    {
+      "section": "messaging",
+      "width": 320,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 320,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 320,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 320,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 390,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 390,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 390,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 390,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 768,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 768,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 768,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 768,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 900,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 900,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 900,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 900,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 1024,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 1024,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 1024,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 1024,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 1280,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 1280,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 1280,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 1280,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 1440,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 1440,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 1440,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 1440,
+      "deviceScale": 1,
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "messaging",
+      "width": 720,
+      "deviceScale": 2,
+      "zoomEquivalent": "200% reflow on a 1440px canvas",
+      "overflow": false,
+      "minimumMeasuredTextContrast": 5.17
+    },
+    {
+      "section": "seo",
+      "width": 720,
+      "deviceScale": 2,
+      "zoomEquivalent": "200% reflow on a 1440px canvas",
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "conversion",
+      "width": 720,
+      "deviceScale": 2,
+      "zoomEquivalent": "200% reflow on a 1440px canvas",
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    },
+    {
+      "section": "quickwins",
+      "width": 720,
+      "deviceScale": 2,
+      "zoomEquivalent": "200% reflow on a 1440px canvas",
+      "overflow": false,
+      "minimumMeasuredTextContrast": 4.78
+    }
+  ],
+  "browserErrors": [],
+  "unexpectedRequests": [],
+  "fixtureOnly": true,
+  "navigationState": "passed",
+  "draftExport": "passed",
+  "textDownload": "passed",
+  "keyboard": "passed"
+}

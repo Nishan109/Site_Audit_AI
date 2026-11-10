@@ -1,0 +1,486 @@
+.workspace {
+  gap: 18px;
+}
+
+.snapshot,
+.task,
+.manual,
+.checkList,
+.legend,
+.empty {
+  min-width: 0;
+  border: 1px solid #dde3ed;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.snapshot {
+  box-shadow: 0 2px 8px #18223606;
+}
+
+.snapshotTop,
+.snapshotFoot,
+.filterLine,
+.queueHeader,
+.actions,
+.scopeNotice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.snapshotTop,
+.snapshotFoot,
+.queueHeader,
+.scopeNotice {
+  justify-content: space-between;
+}
+
+.snapshotTop {
+  padding: 16px 20px;
+}
+
+.identity {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 1 310px;
+}
+
+.identity p,
+.filterLine p,
+.source,
+.queueHeader span,
+.manual p,
+.legend dd,
+.task p,
+.checkDetail,
+.checkEvidence p,
+.empty p {
+  color: #47556b;
+}
+
+.identity p {
+  margin-top: 3px;
+}
+
+.scopeBadge,
+.statusBadge {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2px 7px;
+  background: #eee9fd;
+  color: #5437ad;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(0, 1.45fr);
+  border-block: 1px solid #e5e9f1;
+  font-variant-numeric: tabular-nums;
+}
+
+.metrics > div {
+  padding: 12px 20px;
+}
+
+.metrics > div + div {
+  border-inline-start: 1px solid #e5e9f1;
+}
+
+.metrics dt,
+.redirect dt {
+  font-size: 12px;
+  color: #47556b;
+}
+
+.metrics dd {
+  font-size: 23px;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.metrics dd small {
+  font-size: 12px;
+  color: #47556b;
+  font-weight: 500;
+}
+
+.metrics .timestamp {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 560;
+}
+
+.redirect {
+  display: grid;
+  gap: 8px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e5e9f1;
+}
+
+.snapshotFoot {
+  padding: 8px 20px;
+  font-size: 13px;
+  color: #47556b;
+}
+
+.snapshotFoot a,
+.verify a,
+.empty a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  color: #5337ae;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.collectionStatus {
+  color: #47556b;
+  font-size: 13px;
+}
+
+.collectionStatus:empty {
+  position: absolute;
+}
+
+.collectionStatus:not(:empty),
+.error,
+.scopeNotice {
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: #f3f0fd;
+  color: #483975;
+}
+
+.error {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  background: #fff2f3;
+  color: #922935;
+}
+
+.filterLine {
+  align-items: end;
+}
+
+.filterLine p {
+  padding-block: 9px;
+  font-size: 13px;
+}
+
+.viewBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dce2ed;
+}
+
+.viewBar > div:first-child {
+  border-bottom: 0;
+}
+
+.taskLayout {
+  display: grid;
+  grid-template-columns: minmax(214px, 0.78fr) minmax(0, 1.8fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.taskLayout .queueList {
+  display: grid;
+}
+
+.queueHeader {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e9f1;
+  font-size: 13px;
+}
+
+.queueHeader h4 {
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.taskLayout .taskPicker {
+  display: none;
+}
+
+.task > :is(header, section) {
+  display: grid;
+  gap: 10px;
+  padding: 18px 20px;
+}
+
+.task > section {
+  border-top: 1px solid #e5e9f1;
+}
+
+.task header h4 {
+  font-size: 22px;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.task h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.task h5 svg {
+  color: #5b3ec0;
+}
+
+.task section > button {
+  justify-self: start;
+}
+
+.source {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  font-size: 12px;
+}
+
+.source a {
+  min-height: 30px;
+  text-align: start;
+}
+
+.observations {
+  display: grid;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f4f6fa;
+}
+
+.observations div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 2px 12px;
+}
+
+.observations dt {
+  color: #47556b;
+  font-size: 13px;
+}
+
+.observations dd {
+  white-space: pre-wrap;
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.evidenceDisclosure summary,
+.legend summary {
+  min-height: 38px;
+  padding: 8px 0;
+  font-weight: 600;
+  color: #5337ae;
+}
+
+.steps {
+  margin: 0;
+  padding-inline-start: 22px;
+  list-style: decimal;
+}
+
+.steps li + li {
+  margin-top: 8px;
+}
+
+.task .verify {
+  background: #f8f6fe;
+  border-radius: 0 0 12px 12px;
+}
+
+.checkList {
+  padding: 0 16px;
+}
+
+.check + .check {
+  border-top: 1px solid #e5e9f1;
+}
+
+.checkToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 44px;
+  padding-block: 8px;
+  text-align: start;
+  background: transparent;
+  border: 0;
+}
+
+.checkToggle:hover {
+  color: #5337ae;
+}
+
+.checkToggle > span:first-child {
+  flex: 1;
+  font-weight: 650;
+}
+
+.checkToggle[aria-expanded="true"] > svg,
+.manual details[open] summary > svg {
+  transform: rotate(180deg);
+}
+
+.statusBadge {
+  background: #edf0f5;
+  color: #46546c;
+}
+
+.statusBadge[data-status="review"] {
+  background: #fff1db;
+  color: #704507;
+}
+
+.statusBadge[data-status="observed"] {
+  background: #edf0ff;
+  color: #433789;
+}
+
+.workspace .checkDetail {
+  margin: 6px 0 12px;
+  font-size: 13px;
+}
+
+.checkEvidence:not([hidden]) {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 16px;
+}
+
+.legend,
+.empty {
+  padding: 12px 16px;
+}
+
+.legend dl {
+  display: grid;
+  gap: 8px;
+  padding-block: 4px 8px;
+}
+
+.legend dt,
+.empty :is(h3, h4) {
+  font-weight: 650;
+}
+
+.empty {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+}
+
+.manual header {
+  padding: 18px 20px;
+  background: #faf8ff;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid #e5e9f1;
+}
+
+.manual header h3 {
+  margin-top: 6px;
+  font-size: 19px;
+  font-weight: 650;
+}
+
+.manual > div {
+  padding-inline: 20px;
+}
+
+.manual details + details {
+  border-top: 1px solid #e5e9f1;
+}
+
+.manual summary {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding-block: 8px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.manual summary::-webkit-details-marker {
+  display: none;
+}
+
+.manual summary span {
+  color: #5337ae;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.manual details p {
+  padding: 0 0 12px 30px;
+}
+
+.workspace :is(h3, h4, button, a, select, summary) {
+  scroll-margin-block: 80px 24px;
+}
+
+.workspace :is(h3, h4):focus-visible {
+  outline: 3px solid #7052e8;
+  outline-offset: 4px;
+}
+
+@container (max-width: 700px) {
+  .taskLayout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .taskLayout .queue {
+    display: none;
+  }
+  .taskLayout .taskPicker {
+    display: grid;
+    max-width: none;
+  }
+}
+
+@container (max-width: 480px) {
+  .viewBar .exportActions button {
+    padding-inline: 9px;
+    font-size: 13px;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .metrics > div:last-child {
+    grid-column: 1 / -1;
+    border-inline-start: 0;
+    border-top: 1px solid #e5e9f1;
+  }
+  .metrics > div,
+  .snapshotTop,
+  .snapshotFoot,
+  .task > :is(header, section),
+  .manual header {
+    padding-inline: 14px;
+  }
+  .observations div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

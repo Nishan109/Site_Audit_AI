@@ -1,0 +1,27 @@
+{
+  "url": "https://woxora.com/ebooks",
+  "baseURL": "http://127.0.0.1:3001",
+  "status": 200,
+  "progressEvents": 33,
+  "seconds": 47,
+  "analyzedAt": "2026-11-09T06:45:56.394Z",
+  "dataSource": "live",
+  "modelUsed": "gemini-3.5-flash-lite",
+  "pages": 1,
+  "findings": {
+    "messaging": 1,
+    "ux": 1,
+    "seo": 1,
+    "conversion": 0
+  },
+  "scores": {
+    "Messaging": 88,
+    "UX": 78,
+    "SEO": 86,
+    "Conversion": 84,
+    "AEO": 77
+  },
+  "research": "completed",
+  "validation": "completed",
+  "pageErrors": []
+}

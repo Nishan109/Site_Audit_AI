@@ -1,0 +1,145 @@
+{
+  "source": "Illustrative reports, intercepted Google and key-save requests, and browser-local Lighthouse import",
+  "checks": [
+    {
+      "label": "Ready · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Ready · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Ready · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Ready · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Ready · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Ready · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Ready · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Google results · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Quota recovery · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    },
+    {
+      "label": "Lighthouse import · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.17
+    }
+  ]
+}

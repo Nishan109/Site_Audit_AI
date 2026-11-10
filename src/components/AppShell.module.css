@@ -1,0 +1,336 @@
+.startWorkspace:global(.app-workspace) {
+  margin-left: 0;
+  background: #fafbfe;
+}
+.startWorkspace .startHeader {
+  height: 76px;
+  padding: 0 max(32px, calc((100% - 1200px) / 2));
+  background: #fff;
+  gap: 15px;
+}
+.headerBrand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.6px;
+  color: #222638;
+  padding: 0;
+  background: transparent;
+  min-height: 44px;
+}
+.headerBrand > span:first-child {
+  width: 31px;
+  height: 31px;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.headerBrand > span:last-child > span {
+  font-size: 14px;
+  color: #7052e8;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.startWorkspace .startMain {
+  max-width: 1040px;
+  padding: 54px 32px 40px;
+}
+.startWorkspace .startFooter {
+  border-top: 1px solid #e6e8f0;
+  font-size: 12px;
+  justify-content: space-between;
+  padding: 24px max(32px, calc((100% - 1200px) / 2));
+  color: #69758a;
+}
+.startWorkspace .landingMain {
+  max-width: none;
+  padding: 0;
+}
+.landingMain :global(.error-banner) {
+  max-width: 1200px;
+  margin: 24px auto 0;
+  width: calc(100% - 48px);
+}
+.landingMain :global(.error-banner) > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.landingMain :global(.error-banner) > button {
+  flex-shrink: 0;
+}
+.landingActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.workspaceActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 650px) {
+  .accountHeader {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 68px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .workspaceActions {
+    gap: 8px;
+  }
+  .workspaceActions .helpButton {
+    min-width: 40px;
+    justify-content: center;
+  }
+  .workspaceActions .helpButton span {
+    display: none;
+  }
+  .workspaceActions .helpButton svg {
+    display: block;
+  }
+}
+@media (max-width: 1100px) {
+  .headerReview {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .startWorkspace .startHeader {
+    padding: 0 12px;
+    gap: 8px;
+  }
+  .headerBrand {
+    font-size: 15px;
+    gap: 6px;
+  }
+}
+.landingNav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.landingNav a,
+.footerNav a {
+  color: #606b80;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 12px 0;
+}
+.landingNav a:hover,
+.footerNav a:hover {
+  color: #6644b9;
+}
+.headerReview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 43px;
+  padding: 11px 16px;
+  border: 1px solid #ded5f2;
+  border-radius: 8px;
+  background: #f6f2fd;
+  color: #6849b6;
+  font-size: 12px;
+  font-weight: 550;
+}
+.headerReview:hover {
+  background: #eee7fb;
+}
+.footerNav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.helpButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 7px 11px;
+  border-radius: 7px;
+  background: #fff;
+  color: #626b80;
+  font-size: 13px;
+}
+.helpButton:hover {
+  background: #f6f3fd;
+  color: #6545bd;
+}
+.group {
+  border-top: 1px solid #ececf4;
+  margin-top: 16px;
+  padding-top: 11px;
+}
+.group > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 43px;
+  padding: 9px 11px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #636c81;
+  cursor: pointer;
+  list-style: none;
+}
+.group > summary::-webkit-details-marker {
+  display: none;
+}
+.group[open] > summary > svg {
+  transform: rotate(180deg);
+}
+.navHeading {
+  font-size: 11px;
+  color: #737c8f;
+  padding: 16px 11px 8px;
+  font-weight: 500;
+}
+.sidebarBrand {
+  min-height: 76px;
+  font-size: 18px;
+}
+.reportContext {
+  margin: 2px 18px 18px;
+  padding: 10px 0 0;
+  border-top: 1px solid #eeedf4;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #727b90;
+  overflow-wrap: anywhere;
+}
+.reportContext strong {
+  display: block;
+  font-size: 12px;
+  color: #3e475d;
+  font-weight: 550;
+  margin-top: 3px;
+}
+.navFooter {
+  padding: 18px;
+  font-size: 11px;
+  line-height: 1.8;
+  border-top: 1px solid #e6e8f0;
+  color: #737c8f;
+}
+.reportNav :global(.nav-item) {
+  font-size: 13px;
+  min-height: 42px;
+}
+.helpIntro {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #616b80;
+  margin-top: 10px;
+}
+.reportShell :global(.workspace-topbar) {
+  height: 64px;
+  background: #fff;
+}
+.reportShell :global(.app-main) {
+  padding-top: 27px;
+}
+.reportShell :global(.app-workspace) {
+  background: #f7f8fc;
+}
+.reportShell :global(.breadcrumb) {
+  font-size: 13px;
+}
+.reportShell :global(.sidebar-new) {
+  font-size: 13px;
+  min-height: 44px;
+}
+.reportShell :global(.mobile-section-select) {
+  margin-bottom: 22px;
+}
+.reportShell :global(.mobile-section-select) select {
+  font-size: 14px;
+  min-height: 46px;
+}
+.reportShell :global(.report-transparency) {
+  margin-top: 0;
+}
+@media (max-width: 600px) {
+  .reportShell :global(.app-main) {
+    padding: 24px 18px;
+  }
+}
+@media (max-width: 600px) {
+  .startWorkspace .startHeader {
+    height: 64px;
+    padding: 0 20px;
+  }
+  .startWorkspace .startMain {
+    padding: 32px 20px 24px;
+  }
+  .startWorkspace .landingMain {
+    padding: 0;
+  }
+  .landingNav {
+    display: none;
+  }
+  .landingActions {
+    gap: 0;
+  }
+  .headerReview {
+    font-size: 11px;
+    padding: 9px 12px;
+    min-height: 40px;
+  }
+  .headerReview svg {
+    display: none;
+  }
+  .helpButton {
+    font-size: 12px;
+    padding: 7px 4px;
+  }
+  .helpButton svg {
+    display: none;
+  }
+  .headerBrand {
+    font-size: 17px;
+  }
+  .startWorkspace .startFooter {
+    padding: 18px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 20px;
+    font-size: 11px;
+  }
+  .footerNav {
+    gap: 20px;
+  }
+  .footerNav a {
+    font-size: 11px;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .landingActions {
+    gap: 22px;
+  }
+  .landingNav {
+    gap: 18px;
+  }
+  .landingNav a {
+    font-size: 12px;
+  }
+  .headerReview {
+    font-size: 11px;
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 720px) {
+  .landingNav {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .startWorkspace .accountHeader {
+    height: auto;
+    min-height: 68px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

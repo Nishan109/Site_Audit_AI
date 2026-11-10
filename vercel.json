@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "src/app/api/analyze/route.ts": { "maxDuration": 180, "supportsCancellation": true },
+    "src/app/api/research/route.ts": { "maxDuration": 120 },
+    "src/app/api/fix-steps/route.ts": { "maxDuration": 90 },
+    "src/app/api/marketing-assets/route.ts": { "maxDuration": 90 },
+    "src/app/api/competitor-battlecard/route.ts": { "maxDuration": 120 },
+    "src/app/api/analyze-creatives/route.ts": { "maxDuration": 90 },
+    "src/app/api/pagespeed/route.ts": { "maxDuration": 90 }
+  }
+}

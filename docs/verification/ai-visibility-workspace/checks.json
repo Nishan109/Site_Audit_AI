@@ -1,0 +1,99 @@
+{
+  "source": "Illustrative report and controlled fix-step responses in the running app",
+  "checks": [
+    {
+      "label": "Findings · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page evidence · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Findings · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page evidence · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Findings · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page evidence · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Findings · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page evidence · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Findings · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page evidence · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Findings · 1280px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page evidence · 1280px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Findings · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page evidence · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Assessment and measurement guide · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Findings · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page evidence · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    }
+  ],
+  "flows": [
+    "Exact query-page links and keyboard focus",
+    "Report navigation and reset",
+    "Sparse page and uncollected markup",
+    "Fix generation failure and retry",
+    "Complete copy, text download, print action and headless PDF",
+    "Clipboard denial",
+    "Assessment and measurement disclosures"
+  ]
+}

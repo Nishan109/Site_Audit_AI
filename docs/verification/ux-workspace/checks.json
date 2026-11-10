@@ -1,0 +1,152 @@
+{
+  "baseURL": "http://127.0.0.1:3002",
+  "recordedAt": "2026-11-08T17:01:49.325Z",
+  "fixtureOnly": true,
+  "screenshots": 21,
+  "checks": [
+    {
+      "width": 320,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 390,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 768,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 900,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 1024,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 1280,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 1440,
+      "scale": 1,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "expandedContrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "width": 720,
+      "scale": 2,
+      "overflow": false,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "empty",
+      "width": 390,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "legacy",
+      "width": 390,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "unassessed",
+      "width": 390,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "zero",
+      "width": 390,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "long-observation",
+      "width": 390,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "generation",
+      "width": 1440,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    },
+    {
+      "state": "enlarged-text",
+      "width": 1024,
+      "contrast": {
+        "minimum": 5.32,
+        "failures": []
+      }
+    }
+  ],
+  "browserErrors": [],
+  "unexpectedRequests": [],
+  "selection": "passed",
+  "keyboard": "passed",
+  "navigationRetention": "passed",
+  "newReportReset": "passed",
+  "completeExport": "passed",
+  "browserTextDownload": "passed",
+  "clipboardFailure": "passed",
+  "generationRetry": "passed"
+}

@@ -1,0 +1,80 @@
+{
+  "source": "Illustrative report via intercepted audit response on the running app",
+  "checks": [
+    {
+      "label": "Findings · 320px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 320px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 390px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 390px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 768px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 768px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 1024px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 1024px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 1190px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 1190px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 1280px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 1280px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 1440px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 1440px",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Findings · 640px at 200% zoom",
+      "minimumTextContrast": 4.78
+    },
+    {
+      "label": "Actions & forms · 640px at 200% zoom",
+      "minimumTextContrast": 4.78
+    }
+  ],
+  "flows": [
+    "Exact query-page cross-links",
+    "Keyboard focus transfer",
+    "Page and section state",
+    "Form details",
+    "Retry fix generation",
+    "Copy and clipboard denial",
+    "Download complete text",
+    "Print entry and headless PDF",
+    "Sparse page and reset"
+  ]
+}

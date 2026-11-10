@@ -1,0 +1,171 @@
+.workspace {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.pageGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.technicalStack,
+.panel {
+  display: grid;
+  min-width: 0;
+  gap: 14px;
+}
+
+.panel {
+  padding: 18px;
+  border: 1px solid #dde3ed;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.panel h4 {
+  font-size: 16px;
+  font-weight: 620;
+}
+
+.panel > header p,
+.note {
+  color: #58657a;
+  font-size: 13px;
+}
+
+.panel > button {
+  justify-self: start;
+}
+
+.quotation {
+  margin: 0 0 8px;
+  padding-inline-start: 12px;
+  border-inline-start: 2px solid #b7a7e8;
+  color: #28364c;
+  font-size: 15px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.evidenceActions {
+  margin-top: 10px;
+}
+
+.sourceDisclosure > summary {
+  min-height: 38px;
+  padding-block: 7px;
+  color: #5635b9;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.sourceDisclosure > summary > svg {
+  display: inline;
+  vertical-align: -2px;
+}
+
+.rows {
+  display: grid;
+  gap: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.rows > div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 3px 12px;
+  padding-block: 8px;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.rows dt {
+  color: #58657a;
+  font-size: 13px;
+}
+
+.rows dd {
+  min-width: 0;
+  color: #28364c;
+  white-space: pre-wrap;
+}
+
+.emptyObservation {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f4f6fa;
+  color: #47556b;
+  font-size: 14px;
+}
+
+.validationNote {
+  padding-bottom: 12px;
+  font-size: 13px;
+}
+
+.guide {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  color: #47556b;
+}
+
+.guide dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.guide dl > div {
+  padding: 12px;
+  border: 1px solid #e1e6ef;
+  border-radius: 8px;
+  background: #f8f9fc;
+}
+
+.guide dt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  color: #182236;
+  font-weight: 600;
+}
+
+.guide dt > span {
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: #eee9fd;
+  color: #4e31a7;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.guide dd {
+  padding-top: 5px;
+}
+
+.guide ul {
+  padding-inline-start: 18px;
+  list-style: disc;
+}
+
+@container (max-width: 740px) {
+  .pageGrid,
+  .guide dl {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@container (max-width: 540px) {
+  .panel,
+  .guide {
+    padding: 12px;
+  }
+
+  .rows > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

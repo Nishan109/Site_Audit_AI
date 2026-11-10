@@ -1,0 +1,94 @@
+{
+  "source": "Illustrative report and controlled security refresh responses through the running app",
+  "checks": [
+    {
+      "label": "Review plan · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page signals · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page signals · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page signals · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page signals · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page signals · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 1280px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page signals · 1280px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page signals · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page signals · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    }
+  ],
+  "flows": [
+    "Exact query-page and check cross-links",
+    "Keyboard focus transfer",
+    "Navigation state and new-report reset",
+    "Refresh timeout, preserved snapshot, retry and reordered pages",
+    "Collected versus unavailable headers",
+    "Complete copy, download and print with active filters",
+    "Clipboard denial and preservation of redacted evidence"
+  ]
+}

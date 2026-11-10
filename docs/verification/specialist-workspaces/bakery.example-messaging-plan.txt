@@ -1,0 +1,42 @@
+MESSAGING & COPY · ACTION PLAN
+Website: https://bakery.example/
+The supporting copy explains what you offer and when to collect it. Bring that specificity into the headline and next action.
+Qualitative copy score: 75
+Purpose & message clarity: 68/100 — Supporting wording identifies the bread, location and collection window; the headline and action use broader language.
+Audience & next-step clarity: 74/100 — Supporting wording identifies the bread, location and collection window; the headline and action use broader language.
+Specific, supportable language: 85/100 — Supporting wording identifies the bread, location and collection window; the headline and action use broader language.
+Consistency & readability: 78/100 — Supporting wording identifies the bread, location and collection window; the headline and action use broader language.
+
+1. Make the collection offer clear in your headline · High priority
+The headline “Bread your way” does not identify the Saturday collection offer described in the supporting copy.
+Current copy: Bread your way.
+Your edited draft · not reviewed by AI:
+My carefully reviewed collection headline.
+Source: https://bakery.example/ · heading · main
+“Bread your way.”
+Source: https://bakery.example/ · body copy · main
+“Sourdough bread for Saturday collection in Bath. Choose your loaf and collect between 9am and 12pm.”
+Wording support: “Sourdough bread for Saturday collection in Bath. Choose your loaf and collect between 9am and 12pm.” · https://bakery.example/
+1) Make a focused change: Update the affected wording using the collected collection details. Keep the offer and opening times accurate.
+2) Review it on the page: Read the wording in context and test the affected action with a keyboard and on mobile.
+
+2. Name the destination in your action label · Medium priority
+The action label “Explore” gives less context than the collection route it links to.
+Current copy: Explore
+AI wording option · review before publishing:
+Choose your Saturday loaf
+Source: https://bakery.example/ · action label · main
+“Explore”
+Wording support: “Sourdough bread for Saturday collection in Bath. Choose your loaf and collect between 9am and 12pm.” · https://bakery.example/
+1) Make a focused change: Update the affected wording using the collected collection details. Keep the offer and opening times accurate.
+2) Review it on the page: Read the wording in context and test the affected action with a keyboard and on mobile.
+
+3. Keep collection details together · Low priority
+The collection window in the supporting copy can be kept close to the next action when the wording is revised.
+Source: https://bakery.example/ · body copy · main
+“Sourdough bread for Saturday collection in Bath. Choose your loaf and collect between 9am and 12pm.”
+1) Make a focused change: Update the affected wording using the collected collection details. Keep the offer and opening times accurate.
+2) Review it on the page: Read the wording in context and test the affected action with a keyboard and on mobile.
+
+Review wording in its page context and verify all business claims before publishing. Draft edits do not update the original audit scores. Scores are qualitative AI assessments, not measured visitor behavior or conversion outcomes.
+Only the listed collected pages were reviewed.

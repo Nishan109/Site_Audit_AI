@@ -1,0 +1,370 @@
+.report {
+  --example-ink: #233049;
+  --example-muted: #627087;
+  color: var(--example-ink);
+  background: #fff;
+  border: 1px solid #dddfea;
+  border-radius: 18px;
+  box-shadow:
+    0 24px 70px -30px #4434692e,
+    0 2px 8px #23304904;
+  overflow: hidden;
+  text-align: left;
+  min-width: 0;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 22px;
+  border-bottom: 1px solid #e8eaf1;
+  background: #fcfcfe;
+}
+.reportName {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.reportName svg {
+  color: #7052e8;
+}
+.exampleLabel {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #655184;
+  padding: 4px 7px;
+  border: 1px solid #e7dff5;
+  background: #f7f3ff;
+  border-radius: 5px;
+}
+.content {
+  padding: 24px;
+}
+.pageIdentity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 21px;
+}
+.websiteIcon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e6e2ef;
+  border-radius: 10px;
+  background: #faf8ff;
+  color: #8565b8;
+  flex-shrink: 0;
+}
+.pageIdentity h2 {
+  font-size: 17px;
+  letter-spacing: -0.4px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0;
+}
+.pageIdentity p {
+  font-size: 12px;
+  color: var(--example-muted);
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+}
+.category {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #66508e;
+  font-size: 12px;
+  line-height: 1.6;
+  padding-bottom: 12px;
+}
+.category > span {
+  margin-left: auto;
+  color: #657087;
+  font-size: 11px;
+}
+.finding {
+  padding: 20px;
+  border: 1px solid #e6e4ee;
+  border-radius: 11px;
+}
+.findingHeading {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+.priority {
+  font-size: 11px;
+  color: #856222;
+  background: #faf4e7;
+  border: 1px solid #eee1c6;
+  border-radius: 4px;
+  padding: 3px 7px;
+}
+.findingNumber {
+  font-size: 12px;
+  color: #737b8b;
+}
+.finding h3 {
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  line-height: 1.45;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.evidenceTrail {
+  margin-top: 21px;
+}
+.trailItem {
+  position: relative;
+  border-left: 1px solid #e0d7f2;
+  margin-left: 5px;
+  padding: 0 0 21px 20px;
+}
+.trailItem:last-child {
+  padding-bottom: 0;
+  border-color: transparent;
+}
+.trailDot {
+  position: absolute;
+  left: -4px;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  background: #9b81d5;
+  box-shadow: 0 0 0 1px #d4c3f0;
+  border-radius: 50%;
+}
+.itemLabel {
+  font-size: 12px;
+  color: #667188;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  line-height: 1.5;
+}
+.trailItem blockquote {
+  margin: 8px 0 0;
+  font-size: 17px;
+  color: #354057;
+  font-weight: 500;
+}
+.source {
+  font-size: 11px;
+  color: #657087;
+  margin-top: 4px;
+}
+.suggestedButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 9px;
+  background: #f0ebfc;
+  color: #6143b2;
+  padding: 8px 12px;
+  border: 1px solid #ded3f7;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 550;
+}
+.reason {
+  font-size: 12px;
+  color: #647087;
+  line-height: 1.75;
+  margin-top: 8px;
+  max-width: 300px;
+}
+.nextStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding-top: 15px;
+  margin-top: 17px;
+  border-top: 1px solid #edeaf3;
+}
+.nextStep svg {
+  color: #4f8975;
+  margin-top: 2px;
+}
+.nextStep p {
+  color: #657087;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.nextStep strong {
+  display: block;
+  color: #37435a;
+  font-weight: 550;
+  margin-bottom: 1px;
+}
+.footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #657087;
+  margin-top: 15px;
+}
+.footer svg {
+  margin-top: 2px;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid #e8eaf1;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+.tabs button {
+  padding: 9px 12px;
+  min-height: 44px;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 13px;
+  color: #657087;
+  font-weight: 500;
+}
+.tabs button[aria-selected="true"] {
+  color: #6546bc;
+  background: #f0ebfc;
+}
+.overview {
+  min-height: 360px;
+  padding: 12px 4px 6px;
+}
+.eyebrow {
+  color: #7656bb;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.overview h3 {
+  font-size: 25px;
+  line-height: 1.35;
+  letter-spacing: -0.7px;
+  font-weight: 600;
+  max-width: 440px;
+  margin: 13px 0;
+}
+.overview > p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #627087;
+}
+.overview ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 15px;
+  margin-top: 25px;
+}
+.overview ul li {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #46536b;
+  align-items: center;
+}
+.overview ul svg {
+  color: #9073bf;
+  width: 17px;
+  height: 17px;
+}
+.overview > button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-top: 28px;
+  color: #6546bc;
+  padding: 10px 0;
+  font-size: 14px;
+  min-height: 44px;
+}
+.actionList {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  display: grid;
+  gap: 20px;
+}
+.actionList li {
+  display: flex;
+  gap: 14px;
+}
+.actionList li > span {
+  font-size: 12px;
+  color: #8060b1;
+  margin-top: 2px;
+}
+.actionList strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.actionList p {
+  font-size: 13px;
+  color: #657087;
+  line-height: 1.8;
+  margin-top: 4px;
+}
+.overview .qualifier {
+  border-top: 1px solid #e8eaf1;
+  padding-top: 15px;
+  font-size: 12px;
+}
+@media (max-width: 600px) {
+  .topbar {
+    padding: 15px;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+  .reportName {
+    font-size: 12px;
+  }
+  .exampleLabel {
+    font-size: 11px;
+  }
+  .content {
+    padding: 18px;
+  }
+  .pageIdentity {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .pageIdentity h2 {
+    font-size: 15px;
+  }
+  .websiteIcon {
+    width: 34px;
+    height: 34px;
+  }
+  .category > span {
+    display: none;
+  }
+  .finding {
+    padding: 16px;
+  }
+  .finding h3 {
+    font-size: 18px;
+  }
+  .footer {
+    font-size: 11px;
+  }
+  .tabs {
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+  .tabs button {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .overview h3 {
+    font-size: 23px;
+  }
+}

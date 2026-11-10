@@ -1,0 +1,83 @@
+{
+  "source": "Illustrative Acorn Bakery report and controlled refresh responses through the running app",
+  "checks": [
+    {
+      "label": "Review plan · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page checks · 1440px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page checks · 1024px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page checks · 1190px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.4
+    },
+    {
+      "label": "Page checks · 768px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page checks · 390px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page checks · 320px",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Review plan · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    },
+    {
+      "label": "Page checks · 640px at 200% zoom",
+      "horizontalOverflow": false,
+      "minimumTextContrast": 5.56
+    }
+  ],
+  "flows": [
+    "Keyboard focus and exact cross-links for duplicate titles and query variants",
+    "Partial collection and sampled evidence",
+    "Navigation state retention and new-report reset",
+    "Failed refresh, retained snapshot, retry, and successful reordered results",
+    "Complete copy, text download and browser print after filtering",
+    "Clipboard denial with download still available"
+  ]
+}
