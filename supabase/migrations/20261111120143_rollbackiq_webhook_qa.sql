@@ -3,3 +3,4 @@ CREATE TABLE IF NOT EXISTS public.rollbackiq_webhook_qa (
   id bigint PRIMARY KEY
 );
 ALTER TABLE public.rollbackiq_webhook_qa ENABLE ROW LEVEL SECURITY;
+-- Verify automatic GitHub delivery to the deployed RollbackIQ webhook.
